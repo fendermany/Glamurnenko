@@ -1,0 +1,359 @@
+@media (min-width: 1919.98px){
+    .promo{
+        background-size: cover;
+    }
+}
+
+
+@media (max-width: 1199.98px) {
+    .promo{
+        &__header{
+            grid-template: 80px/540px 270px;
+        }
+    }
+    .how{
+        &__table{
+            &-main{
+                width: 900px;
+                td, th{
+                    &:first-child{
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
+    .service{
+        &__wrapper{
+            column-gap: 20px;
+        }
+    }
+    .whattsapp{
+        padding: 110px 0 70px 0;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .promo{
+        background: url('../../img/bg-main.png') 50% 5% no-repeat;
+        &__header{
+            grid-template: 80px/433px 207px;
+        }
+        &__inner{
+            column-gap: 20px;
+        }
+        &__menu{
+            &-list{
+                font-size: 13px;
+            }
+        }
+        &__phones{
+            font-size: 13px;
+        }
+    }
+    .how{
+        h2{
+            padding: 0;
+        }
+        &__descr{
+            padding: 0;
+        }
+        &__table{
+            &-main{
+                width: 690px;
+                td, th{
+                    &:first-child{
+                        width: 38%;
+                    }
+                    &:nth-child(2){
+                        width: 20%;
+                    }
+                    &:nth-child(3){
+                        width: 22%;
+                    }
+                    &:nth-child(4){
+                        width: 20%;
+                    }
+                }
+            }
+            &-btn{
+                width: 115px;
+                height: 50px;
+            }
+        }
+    }
+    .service{
+        &__wrapper{
+            grid-template: 475px / repeat(2, 300px);
+            grid-auto-rows: 475px;
+            row-gap: 20px;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .promo{
+        background: url('../../img/bg-main.png') 52% 5% no-repeat;
+        &__header{
+            grid-template: 80px / 270px 207px;
+        }
+        &__menu{
+            &-list{
+                flex-wrap: wrap;
+                justify-content: center;
+                li{
+                    margin-right: 15px;
+                    position: relative;
+                    &:after{
+                        display: block;
+                        position: absolute;
+                        top: 2px;
+                        right: -8px;
+                        content: '';
+                        width: 1px;
+                        height: 13px;
+                        background-color: #fff;
+                    }
+                    &:nth-child(4){
+                        &:after{
+                            display: none;
+                        }
+                    }
+                    &:last-child{
+                        &:after{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .help{
+        &__title{
+            font-size: 2rem;
+        }
+        &__descr{
+            margin-top: 30px;
+            font-size: 13px;
+        }
+    }
+    .how{
+        &__table{
+            &-main{
+                width: 510px;
+                height: 480px;
+                td, th{
+                    &:first-child{
+                        width: 34%;
+                    }
+                    &:nth-child(2){
+                        width: 22%;
+                    }
+                    &:nth-child(3){
+                        width: 22%;
+                    }
+                    &:nth-child(4){
+                        width: 22%;
+                    }
+                }
+                th{
+                    font-size: 17px;
+                }
+                td{
+                    font-size: 12px;
+                }
+            }
+            &-row{
+                &_1{
+                    height: 10%;
+                }
+                &_3{
+                    height: 10%;
+                }
+                &_6{
+                    height: 10%;
+                }
+                &_7{
+                    height: 10%;
+                }
+                &_8{
+                    height: 10%;
+                }
+            }
+            &-btn{
+                width: 95px;
+                height: 50px;
+                font-size: 12px;
+            }
+        }
+    }
+    .service{
+        &__wrapper{
+            grid-template: 475px / 500px;
+        }
+    }
+    .whattsapp{
+        &__item{
+            grid-template: 1fr/200px 268px;
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .promo{
+        background: url('../../img/bg-main.png') 50% 10% no-repeat;
+        &__header{
+            grid-template: 80px/80px 225px;
+            &.f-nav{
+                justify-content: space-between;
+                column-gap: 0;
+            }
+        }
+        &__menu{
+            position: relative;
+            &-list{
+                position: fixed;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                top: 0;
+                left: -100%;
+                width: 50%;
+                height: 100vh;
+                padding: 20px 15px;
+                background-color: rgba(0,0,0, .8);
+                transition: 0.6s all;
+                li{
+                    &:after{
+                        display: none;
+                    }
+                }
+                &_active{
+                    left: 0;
+                }
+            }
+            &-item{
+                padding-right: 0;
+                margin: 10px 0;
+                border: none;
+                a{
+                    font-size: 15px;
+                }
+            }
+        }
+        &__logo{
+            width: 150px;
+            height: 104px;
+        }
+    }
+    .hamburger{
+		display: block;
+		position: absolute;
+		left: 10px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 26px;
+		height: 16px;
+		span{
+			display: block;
+			height: 2px;
+			width: 100%;
+			background-color: #fff;
+			margin-bottom: 5px;
+			transition: 0.5s all;
+        }
+		&_active{
+			span{
+				margin-bottom: -2px;
+				&:nth-child(1){
+					transform: translateY(3px) rotate(-45deg);
+                }
+				&:nth-child(2){
+					display: none;
+                }
+				&:nth-child(3){
+					transform: translateY(3px) rotate(45deg);
+                }
+            }
+        }
+    }
+    .help{
+        &__title{
+            text-align: right;
+            margin-left: 50px;
+        }
+    }
+    .how{
+        &__descr{
+            &_centre{
+                padding: 0 30px;
+            }
+        }
+        &__table{
+            padding: 0;
+            margin: 0;
+            img{
+                width: 15px;
+                height: 15px;
+            }
+            &-main{
+                width: 290px;
+                th, td{
+                    &:first-child{
+                        padding: 0;
+                        width: 40%;
+                        text-align: center;
+                    }
+                    &:nth-child(2){
+                        width: 20%;
+                    }
+                    &:nth-child(3){
+                        width: 20%;
+                    }
+                    &:nth-child(4){
+                        width: 20%;
+                    }
+                }
+                th{
+                    font-size: 11px;
+                    font-weight: 700;
+                }
+                td{
+                    font-size: 10px;
+                }
+            }
+            &-btn{
+                width: 50px;
+                height: 90%;
+                font-size: 6px;
+            }
+            &-row{
+                &_7{
+                    td, th{
+                        border-left: none;
+                        border-bottom: none;
+                    }
+                }
+                &_8{
+                    td, th{
+                        border-right: none;
+                        border-left: none;
+                    }
+                }
+            }
+        }
+    }
+    .service{
+        &__wrapper{
+            grid-template: 475px / 300px;
+        }
+    }
+    .whattsapp{
+        &__item{
+            grid-template: 1fr/129px minmax(144px, max-content);
+            column-gap: 15px;
+            font-size: 15px;
+        }
+    }
+}

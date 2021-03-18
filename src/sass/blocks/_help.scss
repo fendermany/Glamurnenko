@@ -1,0 +1,40 @@
+.help{
+    position: relative;
+    padding: 70px 0 70px 0;
+    &__new{
+        background-color: $main-color;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        width: 200px;
+        transform: rotate(-45deg);
+        position: absolute;
+        left: -38px;
+        top: 49px;
+        z-index: -1;
+    }
+    &__title{
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Oranienbaum';
+        margin: 0;
+        font-size: 2.5rem;
+    }
+    &__descr{
+        margin: 0 auto;
+        margin-top: 50px;
+        max-width: 885px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        font-size: 17px;
+    }
+    &__img{
+        margin-top: 5px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

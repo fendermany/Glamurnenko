@@ -1,0 +1,37 @@
+//Bootstrap
+@import 'libs/bootstrap-grid';
+@import 'libs/bootstrap-reboot';
+@import 'css/jquery.fancybox.min.css';
+
+
+//Fonts
+@import '../fonts/Oranienbaum/ora-stylesheet.css';
+@import '../fonts/Roboto/roboto-stylesheet.css';
+
+//Base
+@import 'base/mixins';
+@import 'base/variables';
+
+.title{
+        text-transform: uppercase;
+        text-align: left;
+        font-family: 'Oranienbaum';
+        margin: 0;
+        font-size: 2.5rem;
+        font-weight: 500;
+}
+
+
+//Blocks
+@import 'blocks/promo';
+@import 'blocks/help';
+@import 'blocks/how';
+@import 'blocks/books';
+@import 'blocks/service';
+@import 'blocks/whattsapp';
+@import 'blocks/footer';
+
+
+
+//Media
+@import 'base/media';

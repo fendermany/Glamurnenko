@@ -1,0 +1,117 @@
+.how{
+    h2{
+        padding: 0 22%;
+    }
+    &__descr{
+        font-family: 'Roboto', sans-serif;
+        margin-top: 50px;
+        font-size: 17px;
+        padding: 0 22%;
+        &_centre{
+            display: block;
+            margin-top: 30px;
+            padding: 0 60px;
+        }
+    }
+    &__table{
+        width: 100%;
+        margin-top: 35px;
+        img{
+            width: 25px;
+            height: 25px;
+        }
+        &-main{
+            margin: 0 auto;
+            height: 650px;
+            width: 1100px;
+            font-family: 'Roboto', sans-serif;
+            border: 1px solid rgb(253, 195, 0);
+            th, td{
+                border: 1px solid rgb(253, 195, 0);
+                &:first-child{
+                    width: 52%;
+                    text-align: left;
+                    padding: 0 0 0 20px;
+                }
+                &:nth-child(2){
+                    width: 16%;
+                    text-align: center;
+                }
+                &:nth-child(3){
+                    width: 16%;
+                    text-align: center;
+                }
+                &:nth-child(4){
+                    width: 16%;
+                    text-align: center;
+                }
+            }
+            th{
+                font-size: 24px;
+                font-weight: 900;
+            }
+            td{
+                font-weight: 700;
+                font-size: 16px;
+            }
+        }
+        &-row{
+            &_1{
+                height: 11%;
+                background-color: rgb(255, 209, 0);
+                text-transform: uppercase;
+            }
+            &_2{
+                height: 9%;
+                background-color: rgb(255, 240, 0);
+            }
+            &_3{
+                height: 20%;
+                background-color: rgb(255, 240, 0);
+                vertical-align: top;
+                th, td{
+                    padding-top: 20px !important;
+                }
+            }
+            &_4{
+                height: 9%;
+                background-color: rgb(255, 240, 0);
+            }
+            &_5{
+                height: 9%;
+                background-color: rgb(255, 240, 0);
+            }
+            &_6{
+                height: 12%;
+                background-color: rgb(255, 209, 0);
+            }
+            &_7{
+                height: 15%;
+                background-color: rgb(255, 240, 0);
+            }
+            &_8{
+                height: 15%;
+                background-color: rgb(255, 240, 0);
+                td{
+                    vertical-align: bottom;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+        &-btn{
+            width: 80%;
+            height: 50%;
+            background-color: #000;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 18px;
+            box-shadow: none;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            &:hover, &:active, &:focus{
+                outline: none;
+            }
+        }
+    }
+}

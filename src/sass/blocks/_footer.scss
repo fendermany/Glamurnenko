@@ -1,0 +1,50 @@
+.footer{
+    height: 270px;
+    background-color: #000;
+    padding: 30px 0 35px 0;
+    &__btn{
+        background-color: #000;
+        font-style: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+        border: 2px solid #fff;
+        width: 90px;
+        height: 40px;
+        text-transform: uppercase;
+        position: relative;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        a{
+            color: #fff;
+            text-decoration: none;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 15px;
+        }
+        img{
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 15px;
+        }
+    }
+    &__list{
+        margin-top: 45px;
+        font-size: 13px;
+        font-weight: 400;
+        ul{
+            list-style-type: none;
+            li{
+                color: #fff;
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
